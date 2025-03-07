@@ -46,7 +46,7 @@ android {
 
 
 val gitHubProperties = Properties().apply {
-    load(FileInputStream(rootProject.file("github.properties")))
+    load(FileInputStream(rootProject.file("secrets.properties")))
 }
 
 fun getLibVersionName(): String {
