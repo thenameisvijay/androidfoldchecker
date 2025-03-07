@@ -51,7 +51,7 @@ jobs:
         run: ./gradlew clean :foldablechecklibrary:assembleRelease  # Replace with your build command
 
       - name: Publish to GitHub Packages
-        run: ./gradlew clean :foldablechecklibrary:assembleRelease publish  # Replace with your publish command
+        run: ./gradlew publish  # Replace with your publish command
         
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
