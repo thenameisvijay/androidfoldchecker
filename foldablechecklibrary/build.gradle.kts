@@ -117,8 +117,8 @@ publishing {
                     }
                 }
                 scm {
-                    connection.set("scm:git:git://github.com/thenameisvijay/AndroidFoldableChecker.git")
-                    developerConnection.set("scm:git:ssh://github.com/thenameisvijay/AndroidFoldableChecker.git")
+                    connection.set("scm:git:git://github.com/thenameisvijay/androidfoldchecker.git")
+                    developerConnection.set("scm:git:ssh://github.com/thenameisvijay/androidfoldchecker.git")
                     url.set(getRepoURL())
                 }
             }
