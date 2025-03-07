@@ -37,15 +37,15 @@ jobs:
 
       - name: Create properties file
         run: |
-          echo "gpr.usr=${{ github.GPR_USR }}" > github.properties
-          echo "gpr.key=${{ github.GPR_KEY }}" >> github.properties
-          echo "version.name=${{ github.VERSION_NAME }}" >> github.properties
-          echo "version.code=${{ github.VERSION_CODE }}" >> github.properties
-          echo "artifact.id=${{ github.ARTIFACT_ID }}" >> github.properties
-          echo "group.id=${{ github.GROUP_ID }}" >> github.properties
-          echo "lib.type=${{ github.LIB_TYPE }}" >> github.properties
-          echo "repo.url=${{ github.REPO_URL }}" >> github.properties
-          echo "maven.url=${{ github.MAVEN_URL }}" >> github.properties
+          echo "gpr.usr=${{ secrets.GPR_USR }}" > secrets.properties
+          echo "gpr.key=${{ secrets.GPR_KEY }}" >> secrets.properties
+          echo "version.name=${{ secrets.VERSION_NAME }}" >> secrets.properties
+          echo "version.code=${{ secrets.VERSION_CODE }}" >> secrets.properties
+          echo "artifact.id=${{ secrets.ARTIFACT_ID }}" >> secrets.properties
+          echo "group.id=${{ secrets.GROUP_ID }}" >> secrets.properties
+          echo "lib.type=${{ secrets.LIB_TYPE }}" >> secrets.properties
+          echo "repo.url=${{ secrets.REPO_URL }}" >> secrets.properties
+          echo "maven.url=${{ secrets.MAVEN_URL }}" >> secrets.properties
 
       - name: Build project
         run: ./gradlew build  # Replace with your build command
